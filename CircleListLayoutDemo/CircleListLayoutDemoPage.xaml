@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:local="clr-namespace:CircleListLayoutDemo" x:Class="CircleListLayoutDemo.CircleListLayoutDemoPage">
+    <AbsoluteLayout >
+        <ScrollView AbsoluteLayout.LayoutFlags = "All" AbsoluteLayout.LayoutBounds = ".5,.5,1,1">
+            <local:CircleListLayout x:Name = "CircleLayout"/>
+        </ScrollView>
+        <Frame HeightRequest = "60" Padding="0" HorizontalOptions="Fill" CornerRadius = "30" Margin = "10" AbsoluteLayout.LayoutBounds = ".5, 1" AbsoluteLayout.LayoutFlags = "PositionProportional">
+            <StackLayout x:Name = "ButtonStack" Orientation = "Horizontal" Padding = "10" Spacing = "10" Margin = "0" HorizontalOptions = "FillAndExpand" VerticalOptions = "FillAndExpand">
+   
+            </StackLayout>
+        </Frame>
+
+    </AbsoluteLayout>
+</ContentPage>
